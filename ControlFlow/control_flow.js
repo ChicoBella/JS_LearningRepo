@@ -56,3 +56,19 @@ let isAuthenticated = true;
 let authenticatedStatus = isAuthenticated ? "User is authenticated and logged in" : "User is not authenticated";
 
 console.log("Authenticated Status:",authenticatedStatus); // User is authenticated and logged in
+
+let userrole = "Employee";
+
+switch(userrole) {
+    case "Employee":
+        console.log("You are authorized to the Dietary Services");
+        break;
+    case "Enrolled member":
+        console.log("You are authorized to the Dietary Services and one on one interaction with the Dietician");
+        break;
+    case "Subscriber":
+        console.log("You are authorized with partial access to facilitate the Dietary Services");
+        break;
+    default:
+        console.log("You need enroll or subscribe to access the Dietary Services");
+}
