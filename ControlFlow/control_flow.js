@@ -50,3 +50,9 @@ switch(userType) {
 }
 
 console.log("User Category:",userCategory); // Subscriber User
+
+let isAuthenticated = true;
+
+let authenticatedStatus = isAuthenticated ? "User is authenticated and logged in" : "User is not authenticated";
+
+console.log("Authenticated Status:",authenticatedStatus); // User is authenticated and logged in
