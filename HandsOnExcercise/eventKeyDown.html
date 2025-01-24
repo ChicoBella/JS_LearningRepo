@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+     <meta name="viewport" context="width=device-width,initial-scale=1.0">    
+     <title>Event Key Down</title>
+    </head>
+    <body>
+        <input type="text" id="myInput">
+        <p id="output"></p>
+        <script>
+            const input = document.getElementById("myInput");
+            const output = document.getElementById("output");
+
+            input.onkeydown = function(event){
+                output.textContent = `key pressed: ${event.key}`;
+            };
+        </script>
+    </body>
+</html>
